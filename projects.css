@@ -1,0 +1,22 @@
+.flex-container {
+	width: 30%; /* Set width to 30% of the page */
+	height: 100vh; /* Set height to 100% of viewport height */
+	position: relative; /* Ensure positioning works correctly */
+  }
+
+  .text-box {
+    width: 80%; /* Set the width of the box */
+    height: 200%; /* Set the height of the box */
+	justify-content: center;
+	align-self: center;
+
+    padding: 30px; /* Add padding inside the box */
+	padding-bottom: 40px;
+
+    /* border: 2px solid var(--blue-400);   border */
+    border-radius: 10px; /* Add rounded corners */
+    background-color: #f0f0f0; /* Set the background color */
+    /* box-shadow: 0 0 10px var(--blue-200);  */
+
+	color: var(--black-100); /* Text colour within box */
+}
