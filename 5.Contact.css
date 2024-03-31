@@ -1,0 +1,124 @@
+
+.projectContact {
+    width: 80%; /* Set the width of the box */
+    height: 200%; /* Set the height of the box */
+	justify-content: center;
+	align-self: center;
+
+    padding: 10%; /* padding inside the box */
+	padding-bottom: 10px;
+
+    /* border: 2px solid var(--blue-400);   border */
+    border-radius: 10px; /* Add rounded corners */
+
+	color: var(--black-100); /* Text colour within box */
+
+    background-color: var(--blue-500); /* Set the background color */
+	
+	margin-bottom: 5dvb; /* Creating space between boxes */
+
+
+}
+
+#Contact {
+	text-decoration: none; /* Remove underline from all linked text */
+	color: #ffffff;
+
+}
+
+
+button {
+
+    text-decoration: none;
+    background-color: transparent; 
+    color: var(--white-100); /* Button text color */
+    padding: 10px 60px; /* Padding inside the button */
+    border-radius: 10px; /* rounded corners */
+
+    border: 1px solid #ffffff; /* border */
+	box-shadow: 0.5em 0.5em var(--white-100);
+
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+
+	margin: 10%;
+	flex-wrap: 100%;
+	flex-grow: 100%;
+	
+}
+
+button:hover {
+    background-color: #007bff; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+	border-radius: 10px;
+}
+
+
+
+nav div a:nth-child(5) { /* Selects the second <a> element */
+    color: var(--blue-100);
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .form-container {
+	width: 50%;
+	margin: 50px auto;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+	margin-bottom: 80px;
+	
+  }
+  
+  label {
+	font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+  }
+
+
+
+/* Desktop view */
+@media screen and (min-width: 600px) {
+	.contentRow {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+	}
+
+	main {
+		margin: 0;
+		padding: 0;
+
+	}
+
+	.projectPreview {
+		width: 30dvw;
+		margin: 1em;
+		
+	}
+
+
+}

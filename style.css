@@ -1,0 +1,435 @@
+:root {
+    /* CSS HEX - colours selected for the site */
+	--black-100: #000000;
+	--blue-100: #6171B7;
+	--blue-200: #1D76DE;
+	--blue-300: #7EC8E3;
+	--blue-400: #0000FF;
+	--blue-500: #050A30;
+	--white-100: #FFFFFF;
+	--white-200: #FFFAF2;
+	--grey-100: #979797;
+
+	
+    /* Font applied to the entire site - this was chosen as it is legiable and creates a clean, professional feel*/
+	font-family: 'Inter', Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: var(--white-200);
+	
+	
+}
+
+* {
+	margin: 0;
+	
+}
+
+
+
+
+	
+	/* Front page styling - very large text */
+	h1 {
+
+		display: row;
+		font-size: 8dvh;
+		font-family: 'inter', Arial, Helvetica, sans-serif; 
+		font-weight: Normal;
+		margin-top: -0.1em;
+		margin-bottom: 0.67em;
+		margin-left: 0;
+		margin-right: 0;
+
+		
+		
+		}
+	  
+
+
+	/* Main Headings */
+	  h2 {
+		
+		display: row;
+		justify-content: flex-start;
+		align-items: flex-start;
+		font-size: 8dvh;
+		font-family: 'inter', Arial, Helvetica, sans-serif; 
+		margin-top: 0.67em;
+		margin-bottom: 0.67em;
+		margin-left: 0;
+		margin-right: 0.67em;
+		font-weight: normal;
+	  }
+	
+	/* Sub headings */
+	h3 {
+		display: row;
+		font-size: 2dvh;
+		font-family: 'inter', Arial, Helvetica, sans-serif; 
+		margin-top: 0.67em;
+		margin-bottom: 0.67em;
+		margin-left: 0;
+		margin-right: 0;
+		font-weight: bolder;
+	  }
+	/* coloum headings */
+	h4 {
+	  display: row;
+	  font-size: 2dvh;
+	  font-family: 'inter', Arial, Helvetica, sans-serif; 
+	  margin-top: 0.67em;
+	  margin-bottom: 0.67em;
+	  margin-left: 0;
+	  margin-right: 0;
+	  font-weight: bolder;
+	  font-style: italic;
+	}
+	
+	/* Genral text */
+	  p {
+		display: left;
+		font-size: 1.6dvh;
+		font-family: 'inter', Arial, Helvetica, sans-serif; 
+		margin-top: 0.67em;
+		margin-bottom: 0.67em;
+		margin-left: 0;
+		margin-right: 0;
+	  }
+
+
+	  	/* UPDATE */
+
+	
+/*main{
+
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    background-image: url(images/image5.jpg);
+    background-size: cover;  
+    padding: 0; 
+    margin: 0; 
+    position: relative;
+    z-index: -1;
+
+}*/
+
+
+* {
+	margin: 0;
+}
+
+
+
+/* BODY STYLE- MOBLIE FIRST STYLING */
+body {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--blue-500);
+	justify-content: center;
+	align-items: center;
+}
+  /* Body Styles */
+  .content {
+    padding: 90px 40px 50px; 
+
+  }
+
+
+header {
+	background-color: var(--white-200);
+	height: 10dvh;
+	width: 100%;
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: right;
+	
+	
+
+	#logo {
+		margin-top: 2%;
+		margin-bottom: 1%;
+		position: absolute; /* or fixed depending on your needs */
+		top: 0.67em;
+		left: 0.8em;
+		display: flex; 
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	 
+		/*
+	   display: absolute;
+	   padding-bottom: 1em;
+	   top: 10px;
+	   left: 0px;
+	   bottom: 6px;*/
+		
+	 }
+
+	
+}
+
+#logo:hover{
+	animation: bounce 2s infinite linear;
+	display: inline-block;
+	margin: 0 0.5rem;
+
+}
+
+
+
+
+/* Navigation */
+nav {
+	text-align: center;
+	padding: 20px 0.20px; 
+
+	margin-top: 1%;
+	margin-bottom: 1%;
+	position: absolute; /* or fixed depending on your needs */
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+  }
+  
+  nav a {
+  text-decoration: none;  
+  color: #000000; 
+  font-family: 'inter', Arial, Helvetica, sans-serif;
+  font-size: 7px; 
+  font-weight: bolder;
+  padding: 5px 1px; 
+  margin: 0 2px; 
+  border-radius: px; 
+  transition: background-color 0.3s ease;   /* Smooth transition */
+}
+
+nav a:hover {
+  background-color: #6171B7;
+  padding: 4px 4px; 
+}
+
+
+
+
+
+/* 
+nav {
+	margin-top: 0.5em;
+}
+
+nav > a {
+	text-decoration: none;
+	background-color: var(--purple-heart-600);
+	color: white;
+	padding: 0.25em;
+	border-radius: 0.5em;
+}
+
+nav > a:hover {
+	background-color: var(--purple-heart-950);
+}
+*/
+
+
+
+
+/* Styles for the footer */
+
+footer {
+	background-color: var(--black-100);
+	color: var(--grey-100);
+	font-size: 2dvh;
+	height: 5dvh;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;  /* Aligns items with space between */
+	align-items: center; /* Aligns items vertically */
+
+    padding: 10px 0;
+
+    position: relative; /* footer to base of site- even when scrol down is nessasary */
+    bottom: 0; 
+    left: 0; 
+    z-index: 10;
+
+
+	
+	
+  }
+
+
+.footer {
+	padding-top: 15%;
+	padding-bottom: 10%;
+	padding-right: 10px;
+
+
+}
+
+
+  
+  #footer-text {
+	font-size: smaller;
+	margin-left: 2dvb;
+	flex-grow: 1; /* Takes up remaining space */
+	text-align: left; /* Aligns text to the left */
+  }
+
+
+
+  #footer-copy-text {
+	font-size: 60%;
+	font-style: italic;
+	
+  }
+
+
+main {
+	min-height: 85dvh;
+	width: 100%;
+
+	display: flex-start;
+	flex-direction: column;
+	justify-content: left;
+	align-items: center;
+}
+
+
+main > * {
+	margin: 0.5em;
+}
+
+main > img {
+	height: 20dvh;
+	width: 50dvw;
+	background-color: var(--blue-300);
+	color: var(--blue-200);
+	object-fit:cover;
+}
+
+main > p {
+	font-size: small;
+}
+
+
+main > h1 {
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* TEESTT TEST - draft button layout
+.button {
+	background-color: #04AA6D; 
+	border: white;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+  }
+
+  */
+
+
+
+/* 
+header, footer {
+	background-color: var(--purple-heart-400);
+}  
+*/
+
+/* 
+nav {
+	margin-top: 20em;
+} 
+*/
+
+
+
+/* Desktop styling */
+
+@media screen and (min-width: 500px) {
+	body {
+		background-color: var(--blue-500);
+	}
+
+	main.row {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+
+	.column {
+		width: 30dvw;
+		height: 50dvh;
+	
+	}
+
+
+/* Desktop navigation bar */
+
+/* Navigation */
+nav {
+	text-align: center;
+	padding: 20px 40px; 
+
+	margin-top: 1%;
+	margin-bottom: 1%;
+	position: absolute; /* or fixed depending on your needs */
+	top: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+  }
+ /* Body Styles */
+ .content {
+    padding: 90px 20px 50px; 
+
+  }
+
+  main > * {
+	margin: 1.3em;
+}
+
+	h1 {
+		display: row;
+		font-size: 14dvh;
+		font-family: 'inter', Arial, Helvetica, sans-serif; 
+		font-weight:Normal;
+		margin-top: 0.1em;
+		margin-bottom: 0.1em;
+		margin-left: 0;
+		margin-right: 0;
+		
+	
+		}
+
+}
+
